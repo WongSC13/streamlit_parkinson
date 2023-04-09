@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-!pip install catboost
 from catboost import CatBoostClassifier
 import pickle
 
