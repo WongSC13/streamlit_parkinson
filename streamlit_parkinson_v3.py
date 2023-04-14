@@ -31,18 +31,18 @@ st.title("Parkinson's Disease Prediction using ML")
 col1, col2, col3, col4, col5 = st.columns(5)  
 
 with col1:
-    fo = st.slider('MDVP:Fo(Hz)', -1.0, 1.0, 0.0)
-    RAP = st.slider('MDVP:RAP', -1.0, 1.0, 0.0)
-    APQ3 = st.slider('Shimmer:APQ3', -1.0, 1.0, 0.0)
-    RPDE = st.slider('RPDE', -1.0, 1.0, 0.0)
-    D2 = st.slider('D2', -1.0, 1.0, 0.0)
+    fo = st.slider('MDVP:Fo(Hz)', -1.0, 1.0, 1.0)
+    RAP = st.slider('MDVP:RAP', -1.0, 1.0, -1.0)
+    APQ3 = st.slider('Shimmer:APQ3', -1.0, 1.0, -1.0)
+    RPDE = st.slider('RPDE', -1.0, 1.0, -1.0)
+    D2 = st.slider('D2', -1.0, 1.0, -1.0)
     
 with col2:
-    fhi = st.slider('MDVP:Fhi(Hz)', -1.0, 1.0, 0.0)
-    PPQ = st.slider('MDVP:PPQ', -1.0, 1.0, 0.0)
-    APQ5 = st.slider('Shimmer:APQ5', -1.0, 1.0, 0.0)
-    DFA = st.slider('DFE', -1.0, 1.0, 0.0)
-    PPE = st.slider('PPE', -1.0, 1.0, 0.0)
+    fhi = st.slider('MDVP:Fhi(Hz)', -1.0, 1.0, 1.0)
+    PPQ = st.slider('MDVP:PPQ', -1.0, 1.0, -1.0)
+    APQ5 = st.slider('Shimmer:APQ5', -1.0, 1.0, -1.0)
+    DFA = st.slider('DFE', -1.0, 1.0, -1.0)
+    PPE = st.slider('PPE', -1.0, 1.0, -1.0)
     
 with col3:
     flo = st.slider('MDVP:Flo(Hz)', -1.0, 1.0, 0.0)
@@ -51,16 +51,16 @@ with col3:
     spread1 = st.slider('spread1', -1.0, 1.0, 0.0)
     
 with col4:
-    Jitter_percent = st.slider('MDVP:Jitter(%)', -1.0, 1.0, 0.0)
-    Shimmer = st.slider('MDVP:Shimmer', -1.0, 1.0, 0.0)
-    DDA = st.slider('Shimmer:DDA', -1.0, 1.0, 0.0)
-    spread2 = st.slider('spread2', -1.0, 1.0, 0.0)
+    Jitter_percent = st.slider('MDVP:Jitter(%)', -1.0, 1.0, -1.0)
+    Shimmer = st.slider('MDVP:Shimmer', -1.0, 1.0, -1.0)
+    DDA = st.slider('Shimmer:DDA', -1.0, 1.0, -1.0)
+    spread2 = st.slider('spread2', -1.0, 1.0, -1.0)
     
 with col5:
-    Jitter_Abs = st.slider('MDVP:Jitter(Abs)', -1.0, 1.0, 0.0)
-    Shimmer_dB = st.slider('MDVP:Shimmer(dB)', -1.0, 1.0, 0.0)
-    NHR = st.slider('NHR', -1.0, 1.0, 0.0)
-    HNR = st.slider('HNR', -1.0, 1.0, 0.0)
+    Jitter_Abs = st.slider('MDVP:Jitter(Abs)', -1.0, 1.0, -1.0)
+    Shimmer_dB = st.slider('MDVP:Shimmer(dB)', -1.0, 1.0, -1.0)
+    NHR = st.slider('NHR', -1.0, 1.0, -1.0)
+    HNR = st.slider('HNR', -1.0, 1.0, 1.0)
 
 # predict
 if st.button("Parkinson's Test Result"):
